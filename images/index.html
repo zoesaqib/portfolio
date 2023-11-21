@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .gallery-container {
+      height: 100vh; /* Adjust the height as needed */
+      overflow: hidden;
+    }
+
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      animation: scroll 10s linear infinite;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-100%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery-container">
+    <div class="gallery">
+      <img src="images/container-house-isolated-background_258219-611.jpg" alt="Image 1">
+      <img src="images/grid-shipping-container-home-generative-ai_438099-11531.avif" alt="Image 2">
+      <img src="images/istockphoto-1133768876-612x612.jpg" alt="Image 3">
+      <!-- Add more images as needed -->
+    </div>
+  </div>
+</body>
+</html>

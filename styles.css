@@ -1,0 +1,631 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* loader  */
+/* Add styles for your loader wrapper and loader here */
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Set a high z-index to overlay the loader on top of everything */
+  }
+  
+  .loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  
+/***********************/  
+
+body{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    display: flex;
+    height: 10%;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 20px;
+
+    
+    
+    
+}
+.logo{
+    height: 18vh;
+    width: 12vw;
+    
+    animation: rotate 5s linear infinite ;
+    animation-direction: alternate;
+}
+@keyframes rotate {
+    0% { transform: rotateY(0); }
+    100% { transform: rotateY(360deg); }
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    
+}
+
+.list{
+    padding-top: 25px;
+     margin: 20px;
+    text-decoration: none;
+    color: white;
+    display: inline;   
+     float: right;
+}
+.list:hover{   
+    border-bottom: 5px solid rgb(207, 162, 77);
+    transition: .6s;
+}
+
+.hire{
+    position: relative;
+    top: 7vh;
+    right: 3vw;
+    
+}
+#btn{
+    height: 4vh;
+    width: 8vw;
+    background-color: transparent;
+    border-bottom: 3px solid  rgb(198, 156, 78);
+    color: white;
+    font-size: x-large;
+    cursor: pointer;
+    
+}
+.icons{
+    word-spacing: 20px;
+}
+.icon{
+    height: 6vh;
+    width: 3vw;
+    transition: color 0.3s ease;
+    
+}
+.icon:hover {
+    color: #000000; /* Change the color to your desired hover color */
+    filter: contrast(4) brightness(2);
+  }
+
+
+
+/*                  images             */
+#one{
+    justify-content: space-between; 
+    width: 80vw;
+    height: 100vh;
+
+    
+    
+    
+}
+.text{
+    position: relative;
+    top: 15vh;
+    left: 5vw;
+    font-size: xx-large;
+    font-weight: 900;
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    
+    
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+       top: 5vh;
+    }
+    100%{
+        opacity: 1;
+        top: 15vh;
+    }
+    
+}
+span{
+color:  rgb(198, 156, 78);
+}
+p{
+    font-size: small;
+    font-weight: 300;
+}
+.hire2{
+    position: relative;
+    top: 5vh;
+    left: 5vw;
+    
+    
+}
+#btn2{
+    height: 4vh;
+    width: 8vw;
+    background-color: transparent;
+    border-bottom: 3px solid  rgb(198, 156, 78);
+    background-color:  rgb(181, 141, 66);
+    color: white;
+    font-size: x-large;
+    cursor: pointer;
+    border-radius: 20px;
+    border-bottom: 3px solid white;
+    animation-name: opacity;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+}
+@keyframes opacity {
+    0%{
+        opacity: 0;
+      
+    }
+    100%{
+        opacity: 1;
+        
+    }
+}
+.img{
+    position: absolute;
+    left :30vw;
+    bottom: 2%;
+    animation-name: fade1;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    
+    
+}
+@keyframes fade1 {
+    0%{
+        opacity: 0;
+      
+    }
+    100%{
+        opacity: 1;
+        
+    }
+    
+}
+
+
+.pic2{
+    height: 80vh;
+    
+    position: relative;
+    left: 30vw;
+    filter: drop-shadow(4px 02px 10px rgb(176, 176, 176));
+  
+    
+    
+}
+
+.pic1{
+    height: 80vh;
+    width: auto;
+    position: absolute;
+    left: 25vw;
+    top: 1vw;
+    filter: blur(3px);
+}
+
+
+
+
+
+
+/*           Services        */
+
+
+
+
+#services{
+    display: block;
+    
+}
+.pic{
+    height: 250px;
+    width: 330px;
+    align-items: center;
+}
+
+table{
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    border: 2px solid white;
+    vertical-align: center;
+    font-size: 13px;
+
+}
+th{
+    background-color: white;
+    color: black;
+    height: 50px;
+}
+
+th, td{
+    border: 2px solid white;
+    height: 40px;
+}
+
+.exp{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    width: 100%;
+
+}
+h1{
+    font-size: 30px;
+}
+.table{
+    height: 7vh;
+    font-size:26px;
+    
+    
+}
+.row{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+
+
+/* services   */
+
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+td a:hover{
+   color: rgb(181, 141, 66);;
+}
+
+#services{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    
+    
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+       top: 5vh;
+    }
+    100%{
+        opacity: 1;
+        top: 15vh;
+    }
+}
+table{
+    width: 40vw;
+    height: 55vh;
+    text-align: center;
+    border: 2px solid white;
+    vertical-align: center;
+
+}
+th{
+    background-color: white;
+    color: black;
+}
+
+th, td{
+    border: 2px solid white;
+}
+.pic{
+   height: 75vh;
+   width: auto;
+}
+.exp{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.table{
+    height: 7vh;
+    font-size:26px;
+    
+    
+}
+.row{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+
+
+/*   footer   */
+
+
+
+footer{
+    text-align: center;
+}
+
+
+
+/*    toggle      */
+
+
+
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    background-color: white;
+    height: 3px;
+    width: 23px;
+    position: relative;
+    left: 38vw;
+    top: 4vh;
+    margin: 3px 0;
+}
+
+
+/*        About Me     */
+
+
+.about, .saqibi {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 0;
+    background-color: #f8f8f8;
+  }
+
+  .about {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .saqibi {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .muhammad {
+    color: #333;
+  }
+
+  .zoe {
+    color: #555;
+  }
+
+  .script {
+    color: #777;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .logo{
+        height: 15vh;
+        width: 130px;
+       
+    }
+    .none{
+        display: none;
+    }
+    #btn{
+        height: 4vh;
+        width: 20vw;
+        bottom: 3vh;
+        right: 15vw;
+        position: relative;
+        font-size: 15px;
+    }
+    
+    .text{
+        font-size: 15px;
+        position: relative;
+        top: 7vh;
+        left: 4vh;
+        animation-name: fade;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        
+        
+    }
+    
+    @keyframes fade {
+        0%{
+            opacity: 0;
+           top: 3vh;
+        }
+        100%{
+            opacity: 1;
+            top: 7vh;
+        }
+        
+    }
+        
+    
+    #btn2{
+        height: 4vh;
+        width: 22vw;
+        font-size: 18px;
+        
+        border-radius: 20px;
+        border-bottom: 4px solid white;
+    }
+    .icon{
+        height: 5%;
+        width: 33px;
+        word-spacing: 2px;
+    }
+   
+    .pic2{
+        height: 60vh;
+        position: relative;
+        left: -2vh;
+        top: 10vh;
+        
+    }
+    .pic1{
+        display: none;
+        height: 60vh;
+        width: 280px;
+        position: relative;
+        left: -8vh;
+        top: 4vh;
+        border: 3px solid red
+        
+    }
+
+
+    /*         services      */
+
+    #services{
+        display: block;
+        
+    }
+    .pic{
+        height: 250px;
+        width: 330px;
+        align-items: center;
+    }
+
+    table{
+        width: 100%;
+        height: 500px;
+        text-align: center;
+        border: 2px solid white;
+        vertical-align: center;
+        font-size: 13px;
+    
+    }
+    th{
+        background-color: white;
+        color: black;
+        height: 50px;
+    }
+    
+    th, td{
+        border: 2px solid white;
+        height: 40px;
+    }
+    
+    .exp{
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        color: black;
+        width: 100%;
+    
+    }
+    h1{
+        font-size: 30px;
+    }
+    .table{
+        height: 7vh;
+        font-size:26px;
+        
+        
+    }
+    .row{
+        background-color: rgb(255, 255, 255);
+        color: black;
+    }
+    
+
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        z-index: 1;
+        text-align: center;
+    }
+
+    ul.show {
+        display: flex;
+
+    }
+
+    .nav {
+        margin: 0;
+        
+        text-align: center;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
